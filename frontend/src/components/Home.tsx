@@ -20,8 +20,8 @@ const Home = () => {
       }}
     >
       <Box>
-        <Typography variant="h2" gutterBottom>
-          Welcome to Chattini, {user?.username}!
+        <Typography variant="h3" gutterBottom>
+          Welcome, {user?.username}!
         </Typography>
 
         <Typography variant="h5" sx={{ mb: 4 }}>
