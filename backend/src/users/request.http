@@ -1,0 +1,111 @@
+### Create a new user
+
+POST http://localhost:3000/users/register
+content-type: application/json
+
+{
+    "username": "testus11d",
+    "email": "test51d@test.com",
+    "password": "testpassword"
+}
+
+
+### Find if user exits
+
+GET http://localhost:3000/users/6881ab00-d699-468b-b613-c114055a41b3
+
+
+### Get all users from the DB
+
+GET http://localhost:3000/users
+
+
+### Delete user from the DB
+
+DELETE http://localhost:3000/users/c3ffc63b-5c0d-45fc-872a-a4560aa54b6a		
+
+
+### Update a user
+
+PATCH http://localhost:3000/users/ed907041-fa23-4d18-b5b7-b21d1dcce998
+content-type: application/json
+
+{
+    "password": "123testchange"
+}
+
+
+### Signup
+
+POST http://localhost:3000/users/register
+content-type: application/json
+
+{
+    "username": "ADMIN",
+    "email": "admin@admin.com",
+    "password": "admin"
+}
+
+
+### Signin
+
+POST http://localhost:3000/users/signin
+content-type: application/json
+
+{
+    "email": "admin@admin.com",
+    "password": "admin"
+}
+
+### Signin
+
+POST http://localhost:3000/users/signin
+content-type: application/json
+
+{
+    "email": "test@test.com",
+    "password": "test"
+}
+
+
+### Signin
+
+POST http://localhost:3000/users/signin
+content-type: application/json
+
+{
+    "email": "ed@ed.com",
+    "password": "ed"
+}
+
+
+### Sign user out
+
+POST http://localhost:3000/users/signout
+
+### Decode JWT token and return user
+
+GET http://localhost:3000/users/whoami
+
+
+### Update password
+
+POST http://localhost:3000/users/reset-password
+content-type: application/json
+
+{
+    "email": "eduardo21@test.com"
+}
+
+
+
+### Request reset password email
+
+PATCH http://localhost:3000/users/update-password
+content-type: application/json
+
+{
+    "email": "eduardo21@test.com",
+    "resetToken": "e1fa3756d5565dc2950c0fc0c215b552.0647f85072b611188b5c6e6f3f1ae66f0c4210e9514f647729ae4c9d609a9ff909996ec4a7bb66909c1c95cc55f29a6ee98ce74390fb7022928e277b5e40fe0a",
+    "newPassword": "LOLASO"
+}

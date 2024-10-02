@@ -1,0 +1,29 @@
+### Creating a new message
+
+POST http://localhost:3000/users/f81f0939-0e79-4941-855b-24bccb02953b/messages/d4821235-bae5-4f54-9bc5-d511c48c4554
+Content-Type: application/json
+
+{
+  "content": "Hello, how are you?"
+}
+
+
+### Creating a new message
+
+POST http://localhost:3000/users/f81f0939-0e79-4941-855b-24bccb02953b/messages/8ef91b33-8f67-4725-9ba4-31caf73aa710
+Content-Type: application/json
+
+{
+  "content": "TESTING"
+}
+
+
+### Get messages
+
+GET http://localhost:3000/users/d4821235-bae5-4f54-9bc5-d511c48c4554/messages/f81f0939-0e79-4941-855b-24bccb02953b
+
+
+### Get all conversations from a specific user
+
+GET http://localhost:3000/users/8ef91b33-8f67-4725-9ba4-31caf73aa710/conversations
+

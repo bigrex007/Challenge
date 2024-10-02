@@ -1,0 +1,10 @@
+### Request reset password email
+
+POST http://localhost:3500/notifications/send-email
+content-type: application/json
+
+{
+    "email": "eduardomyugi@hotmail.com",
+    "subject": "TEST",
+    "content": "TEST"
+}
